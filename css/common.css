@@ -12,6 +12,22 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+button {
+  padding: 8px 16px;
+
+  border: none;
+  border-radius: 8px;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #fff;
+}
+
 /* task 1  */
 
 h2 {
@@ -114,19 +130,7 @@ task 5
 
 button[type="submit"],
 .change-color {
-  padding: 8px 16px;
-
   background-color: #4e75ff;
-  border: none;
-  border-radius: 8px;
-
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  text-align: left;
-  color: #fff;
 }
 
 .login-form label {
@@ -151,4 +155,56 @@ button[type="submit"],
 
   margin-top: 8px;
   width: 500px;
+}
+
+/* task 6 */
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: calc(100vw / 2);
+  height: calc(100vh / 8);
+  margin: auto;
+  padding: 32px;
+
+  background-color: #f6f6fe;
+  border-radius: 8px;
+
+  margin-bottom: 32px;
+}
+
+button[data-create] {
+  background-color: #4e75ff;
+}
+
+button[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+input[type="number"] {
+  width: calc(100% / 3);
+  height: 40px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+
+  min-width: calc(100vw / 2);
+  min-height: calc(100vh / 4);
+
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  margin: auto;
+  padding: 32px;
+}
+
+.box {
+  margin: 5px;
 }
